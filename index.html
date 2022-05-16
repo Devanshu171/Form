@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Forms Challenge</title>
+  </head>
+  <body>
+    <header>
+      <h1>Contact Us</h1>
+    </header>
+    <main>
+      <form action="/" method="get">
+        <section>
+          <h2>How can we help you?</h2>
+          <ul>
+            <li>
+              <label for="username">Your Name</label>
+              <input type="text" name="user-name" id="username" required />
+            </li>
+            <li>
+              <label for="useremail">Your E-Mial Address</label>
+              <input type="email" name="user-emial" id="useremail" required />
+            </li>
+            <li>
+              <label for="usernumber">Your Phone Number</label>
+              <input type="tel" name="user-number" id="usernumber" required />
+            </li>
+            <li>
+              <label for="usermessage">Your Message</label>
+              <textarea
+                name="user-message"
+                id="usermessage"
+                required
+                rows="7"
+                minlength="10"
+                maxlength="200"
+              ></textarea>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <label for="userconnect">How did you find us?</label>
+          <select name="user-connect" id="userconnect" required>
+            <option value="">Web Search</option>
+            <option value="">Friend</option>
+            <option value="">Advirsment</option>
+            <option value="">Other</option>
+          </select>
+        </section>
+        <section>
+          <h2>How should we replay?</h2>
+
+          <ul>
+            <li class="inline-control">
+              <input type="radio" name="reply" id="contact-call" required />
+              <label for="contact-call">Call me</label>
+            </li>
+            <li class="inline-control">
+              <input type="radio" name="reply" id="contact-email" required />
+              <label for="contact-email">Send me an email</label>
+            </li>
+            <li class="inline-control">
+              <input
+                type="radio"
+                name="reply"
+                id="contact-no"
+                required
+                minlength="5"
+              />
+              <label for="contact-no">Dont't replay</label>
+            </li>
+          </ul>
+        </section>
+        <section class="inline-control">
+          <input type="checkbox" name="terms" id="userterms" required />
+          <label for="userterms">Accept Terms</label>
+        </section>
+        <section id="forms-actions">
+          <button type="reset" class="btn-empty">Clear</button>
+          <button type="submit" class="btn-filled">Submit</button>
+        </section>
+      </form>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,83 @@
+body {
+  background-color: rgb(239, 249, 255);
+  font-family: "Roboto", sans-serif;
+}
+h1 {
+  text-align: center;
+  margin: 2rem;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+form {
+  width: 40rem;
+  margin: 0 auto;
+  background-color: rgb(223, 238, 253);
+  border-radius: 6px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+}
+section {
+  margin-bottom: 1rem;
+}
+label {
+  color: rgb(66, 76, 97);
+  display: block;
+  /* font-weight: bold; */
+  margin: 0.5rem 0;
+}
+input,
+textarea,
+select {
+  font: inherit;
+  padding: 0.5rem;
+  border: 1px solid rgb(169, 173, 212);
+  width: 100%;
+  display: block;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+textarea {
+  resize: none;
+}
+input:focus,
+textarea:focus {
+  background-color: rgb(228, 228, 255);
+}
+.inline-control {
+  display: flex;
+}
+.inline-control label {
+  margin: 0;
+  margin-left: 0.5rem;
+}
+.inline-control input {
+  width: auto;
+}
+button {
+  font: inherit;
+  border: 1px solid rgb(51, 67, 100);
+  border-radius: 4px;
+  cursor: pointer;
+}
+.btn-filled {
+  background-color: rgb(51, 67, 100);
+  color: white;
+}
+.btn-empty {
+  background-color: transparent;
+  color: rgb(51, 67, 100);
+}
+.btn-filled:hover {
+  background-color: rgb(68, 89, 129);
+  border-color: rgb(69, 89, 129);
+}
+.btn-empty:hover {
+  background-color: rgb(136, 153, 185);
+}
+
+#forms-actions {
+  text-align: right;
+}
